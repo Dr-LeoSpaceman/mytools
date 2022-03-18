@@ -1,0 +1,11 @@
+[Unit]
+Description=Gets database info and gathers stats on login attempts
+
+[Service] 
+Type=oneshot
+ExecStart=/opt/tools/getstats.py
+User=<privesc>
+Group=<privesc>
+
+[Install]
+WantedBy=default.target
