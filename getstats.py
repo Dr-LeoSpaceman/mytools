@@ -4,7 +4,7 @@ from os import environ
 db = mysql.connect(
     host = "localhost",
     user = "root",
-    passwd = "Sup3rDup3rS3cr3t#",
+    passwd = environ["PASSWRD"],
     database="dev"
 )
 conn = db.cursor()
